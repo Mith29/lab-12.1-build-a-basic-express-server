@@ -18,6 +18,11 @@ app.get("/contact", (req, res) => {
 
   res.sendFile(path.join(__dirname, "public/contact.html"));
 });
+
+app.get("/menu", (req, res) => {
+  res.sendFile(path.join(__dirname, "public/menu.html"));
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
